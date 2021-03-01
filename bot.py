@@ -134,5 +134,3 @@ async def on_message(message):
             await message.channel.send(message.author.mention + " Comandos:\n```.r <dados> : rola os dados\n.b <dados> : mostra o mínimo e máximo que é possível tirar com os dados informados.\n.h         : mostra essa mensagem.```")
 
 client.run(token)
-
-# https://discord.com/oauth2/authorize?client_id=813552262995378216&scope=bot
