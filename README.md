@@ -39,3 +39,5 @@ python3 bot.py
 ```
 ## Yeah, but WHY cocker?
 idk
+
+Also, the bot has a 5% chance of not doing anything and telling you to go fuck yourself.
