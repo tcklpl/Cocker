@@ -6,6 +6,7 @@ Command    | Syntax                                            | RegEx Formattin
 -----------|---------------------------------------------------|---------------------------------------------|-------------
 Roll       | .r <*dice and/or numbers to sum and/or subtract*> | ([+-]{0,1}[0-9]*d[0-9]+)\|([+-]{0,1}[0-9]+) | Rolls the informed dices and performs any necessary addition or subtraction with the values.
 Boundaries | .b <*dice and/or numbers to sum and/or subtract*> | ([+-]{0,1}[0-9]*d[0-9]+)\|([+-]{0,1}[0-9]+) | Informs the minimum and maximum possible values you can get with the informed dices and values.
+Player Dices| .pd                                              | | Rolls 6 * 4d6 and subtracts the smallest dice from every roll.
 Help       | .h                                                |                                             | Shows the help message containing all available commands.
 
 ## Dice formatting
@@ -27,5 +28,14 @@ The following **ARE NOT** valid dices:
 * d0
 * d-1
 
+## Running
+You need to create a file named `bot_token.py` with your bot token:
+```
+token = "<YOUR BOT TOKEN>"
+```
+After this, you can just run the bot with
+```
+python3 bot.py
+```
 ## Yeah, but WHY cocker?
 idk
