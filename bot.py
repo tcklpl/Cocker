@@ -3,7 +3,7 @@ from bot_token import token
 
 bot = commands.Bot(command_prefix='.')
 
-cogs = ['commands.help', 'commands.roll', 'commands.boundaries', 'commands.playerdices']
+cogs = ['commands.help', 'commands.roll', 'commands.boundaries', 'commands.playerdices', 'commands.battle']
 
 for cog in cogs:
     bot.load_extension(cog)

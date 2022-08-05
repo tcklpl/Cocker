@@ -14,11 +14,19 @@ class Help(Cog):
             await ctx.channel.send(ctx.author.mention + " Vai se foder")
             return
         
-        help = 'Comandos:\n```\
+        help = '```\
+        Comandos Básicos:\n\
             .r <dados> : rola os dados\n\
             .b <dados> : mostra o mínimo e máximo que é possível tirar com os dados informados.\n\
             .h         : mostra essa mensagem.\n\
-            .pd        : roda os dados para criação de personagem.\
+            .pd        : roda os dados para criação de personagem.\n\
+        Batalhas:\n\
+            .bc <NOME> : cria uma batalha com o nome desejado.\n\
+            .bj <NOME BATALHA> <NOME JOGADOR> <OPCIONAL: DADO DE INICIATIVA> : entra na batalha desejada com ou sem um dado de iniciativa (por padrão será um d20).\n\
+            .bk <NOME BATALHA> <NOME JOGADOR> : remove o jogador da batalha.\n\
+            .bs <NOME BATALHA> : mostra a ordem de iniciativa da batalha.\n\
+            .br <NOME BATALHA> : remove a batalha.\n\
+            .bl : lista as batalhas atuais no canal.\
         ```'
 
         await ctx.channel.send(ctx.author.mention + " " + help)

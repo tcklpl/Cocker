@@ -8,6 +8,13 @@ Roll       | .r <*dice and/or numbers to sum and/or subtract*> | ([+-]{0,1}[0-9]
 Boundaries | .b <*dice and/or numbers to sum and/or subtract*> | ([+-]{0,1}[0-9]*d[0-9]+)\|([+-]{0,1}[0-9]+) | Informs the minimum and maximum possible values you can get with the informed dices and values.
 Player Dices| .pd                                              | | Rolls 6 * 4d6 and subtracts the smallest dice from every roll.
 Help       | .h                                                |                                             | Shows the help message containing all available commands.
+Create Battle | .bc <*battle name*> | \w+ | Creates a battle with the specified name.
+Join Battle | .bj <*battle name*> <*player name*> (<*initiative dice*>)? | \w+ \w+ ([+-]{0,1}[0-9]*d[0-9]+)\|([+-]{0,1}[0-9]+) | Joins the specified battle with the required name. The initiative dice is optional, if omitted it will default to a d20.
+Kill (Leave Battle) | .bj <*battle name*> <*player name*> | \w+ \w+ | Removes the specified player from the battle.
+Show Battle | .bs <*battle name*> | \w+ | Lists all the players in the specified battle sorted by the initiative.
+Remove Battle | .br <*battle name*> | \w+ | Removes the specified battle.
+
+> **Battles are channel bound**. If you start a battle on the channel #a, the battle can only be interacted inside this channel, messages on channel #b will report the battle as non-existent.
 
 ## Dice formatting
 The dice is formatted as:
